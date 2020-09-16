@@ -20,7 +20,7 @@ var weather = {
 function fetchweather(url) {
     fetch(url).then(res => res.json()).then(data => {
         console.log(data)
-        for (i = 0; i < 6; i++) {
+        for (let i = 0; i < 6; i++) {
             weather.temperatureMax = data["list"][i]["main"]["temp_max"];
             weather.temperatureMin = data["list"][i]["main"]["temp_min"];
             weather.temperatureAverage = data["list"][i]["main"]["temp"];
