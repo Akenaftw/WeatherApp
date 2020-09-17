@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f06b1b0-0978-4715-bcee-02c3910bc08f" name="Default Changelist" comment="" />
+    <list default="true" id="2f06b1b0-0978-4715-bcee-02c3910bc08f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +52,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ajax-pokedex" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -69,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600241109591</updated>
       <workItem from="1600241110738" duration="309000" />
-      <workItem from="1600241498677" duration="3292000" />
+      <workItem from="1600241498677" duration="23614000" />
     </task>
     <servers />
   </component>
@@ -87,5 +89,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2663" y="298" width="424" height="491" key="FileChooserDialogImpl" timestamp="1600260361393">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2663" y="298" width="424" height="491" key="FileChooserDialogImpl/72.29.1848.1051/1920.0.1920.1080@1920.0.1920.1080" timestamp="1600260361393" />
   </component>
 </project>
