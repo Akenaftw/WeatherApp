@@ -9,17 +9,20 @@ let createApi = () => {
 //trigger for the modified url to gather specific api data
 document.getElementById("trigger").addEventListener("click", createApi)
 var weather = {
+    date: "",
+    weather: "",
     temperatureMax: "",
     temperatureMin: "",
     temperatureAverage: "",
     humidity: "",
-    windSpeed:"",
+    windSpeed: "",
 }
 
 function fetchweather(url) {
     fetch(url).then(res => res.json()).then(data => {
         console.log(data)
         for (var i = 0; i < 6; i++) {
+            weather.date = today(i);
             weather.temperatureMax = data["list"][i]["main"]["temp_max"];
             weather.temperatureMin = data["list"][i]["main"]["temp_min"];
             weather.temperatureAverage = data["list"][i]["main"]["temp"];
@@ -36,11 +39,13 @@ function fetchweather(url) {
 
 }
 function displayWeather(data){
+    let day = today;
     let extraDay = document.createElement("div");
     let target = document.getElementById("target")
     extraDay.classList.add("days");
     extraDay.innerHTML =
-        "max temperature= " + data.temperatureMax +
+        data.day +
+        "<br>max temperature= " + data.temperatureMax +
         "<br> Min-temperature= " + data.temperatureMin +
         "<br> Average temperature = "+ data.temperatureAverage +
         "<br> humidity = " + data.humidity +
@@ -48,5 +53,22 @@ function displayWeather(data){
     target.appendChild(extraDay);
 
 }
+
+Date.prototype.getDayOfWeek = function(){
+    return ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][ this.getDay() ];
+    console.log(this.getDay())
+};
+function today(i) {
+    var today = new Date()
+    var dd = today.getDate()+ i;
+    var mm = today.getMonth();
+    var yyyy = today.getFullYear();
+    today= dd + "/" + mm + "/" + yyyy;
+
+    return today;
+}
+
+
+
 
 

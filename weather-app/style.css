@@ -1,0 +1,47 @@
+#target{
+    display: flex;
+    flex-direction: row;
+    background-color: #7b0505;
+    width: 80vw;
+    position: center;
+    justify-content: center;
+    margin: auto;
+    color: black;
+}
+.days{
+    margin: auto;
+    display: block;
+    float: left;
+    border-style: solid;
+    background-color: #7b0505;
+    color: black;
+}
+
+.buttonWrapper{
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    display: block;
+    background-color: #7b0505;
+    width: 20%;
+
+}
+
+#title{
+    background-color: #7b0505;
+    display: block;
+    margin: auto;
+    width: 20%;
+    color: black;
+}
+
+body{
+    background-color: #7b0505;
+    color: black;
+}
+.bigframe{
+    margin: auto;
+    width: 80%;
+    background-color: #7b0505;
+    color: black;
+}
