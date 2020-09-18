@@ -36,6 +36,7 @@ function fetchweather(url) {
 
     })
         .catch(function (error) {
+            alert("Please input: City,Country before clicking the button")
             console.log(error)
         })
 
@@ -46,7 +47,8 @@ function displayWeather(data){
     extraDay.classList.add("days");
     extraDay.innerHTML =
         data.date +
-        "<br> <img src=\"http://openweathermap.org/img/wn/"+ data.image +"@2x.png\">
+        //http://openweathermap.org/img/wn/10d@2x.png (link for image pulling)
+        "<br><img src=\"http://openweathermap.org/img/wn/" + data.image + "@2x.png\"></image>" +
         "<br> Max-temperature= " + data.temperatureMax +
         "<br> Min-temperature= " + data.temperatureMin +
         "<br> Average temperature = "+ data.temperatureAverage +

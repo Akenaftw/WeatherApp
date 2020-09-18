@@ -1,20 +1,25 @@
 #target{
+    margin-top: auto;
     display: flex;
     flex-direction: row;
-    background-color: #7b0505;
+    background-color: rgba(76, 129, 173,0.1);
     width: 80vw;
     position: center;
-    justify-content: center;
-    margin: auto;
+    justify-content: space-evenly;
     color: black;
+    flex-wrap: wrap;
+
 }
 .days{
-    margin: auto;
     display: block;
     float: left;
     border-style: solid;
-    background-color: #7b0505;
+    background-color: rgba(76, 129, 173,0.8);
     color: black;
+    margin-top: 50px;
+    width: 25%;
+
+
 }
 
 .buttonWrapper{
@@ -22,26 +27,31 @@
     justify-content: center;
     align-content: center;
     display: block;
-    background-color: #7b0505;
+    background-color: rgba(76, 129, 173,0.1);
     width: 20%;
 
 }
 
 #title{
-    background-color: #7b0505;
+    background-color: rgba(76, 129, 173,0.1);
     display: block;
-    margin: auto;
-    width: 20%;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    text-align: center;
+    flex: auto;
+
     color: black;
 }
 
 body{
-    background-color: #7b0505;
+    background-image: url("Images/seamless-weather-forecast-background-vector-2000781.jpg");
     color: black;
 }
 .bigframe{
     margin: auto;
     width: 80%;
-    background-color: #7b0505;
+    background-color: rgba(76, 129, 173,0.1);
     color: black;
+
 }
